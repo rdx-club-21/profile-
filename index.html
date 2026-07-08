@@ -69,14 +69,10 @@
         .modal-close-btn { background: #2ecc71; color: white; border: none; padding: 10px 30px; border-radius: 25px; font-size: 14px; cursor: pointer; font-weight: 600; }
         .page-view { display: none; }
         .page-view.active { display: block; }
-
-        /* Sub Page Common Styles */
         .sub-header { background: white; display: flex; align-items: center; justify-content: center; padding: 16px; position: relative; border-bottom: 1px solid #f0f0f0; position: sticky; top: 0; z-index: 50; }
         .back-btn { position: absolute; left: 16px; background: none; border: none; font-size: 22px; cursor: pointer; color: #333; padding: 5px; line-height: 1; }
         .sub-header h1 { font-size: 18px; font-weight: 600; color: #1a1a2e; }
         .sub-content { padding: 15px; }
-
-        /* Wallet Page */
         .wallet-summary { background: linear-gradient(135deg, #2ecc71, #27ae60); border-radius: 16px; padding: 24px; color: white; margin-bottom: 16px; }
         .wallet-summary .ws-label { font-size: 14px; opacity: 0.85; margin-bottom: 6px; }
         .wallet-summary .ws-amount { font-size: 30px; font-weight: 800; margin-bottom: 16px; }
@@ -90,8 +86,6 @@
         .wallet-row:last-child { border-bottom: none; }
         .wallet-row-label { font-size: 14px; color: #666; }
         .wallet-row-value { font-size: 14px; color: #333; font-weight: 600; }
-
-        /* VIP Page */
         .vip-banner { background: linear-gradient(135deg, #f39c12, #e67e22); border-radius: 16px; padding: 24px; color: white; text-align: center; margin-bottom: 16px; }
         .vip-banner .vip-icon-large { font-size: 50px; margin-bottom: 10px; }
         .vip-banner h2 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
@@ -104,23 +98,10 @@
         .vip-level-info h4 { font-size: 14px; color: #333; font-weight: 600; }
         .vip-level-info p { font-size: 12px; color: #999; }
         .vip-level-reward { font-size: 13px; font-weight: 600; color: #2ecc71; }
-
-        /* History Page Common */
         .history-page-list { background: white; border-radius: 14px; overflow: hidden; }
-        .history-page-item { display: flex; align-items: center; padding: 14px 16px; border-bottom: 1px solid #f5f5f5; gap: 12px; }
-        .history-page-item:last-child { border-bottom: none; }
-        .hp-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
-        .hp-info { flex: 1; }
-        .hp-info h4 { font-size: 14px; color: #333; font-weight: 600; margin-bottom: 2px; }
-        .hp-info p { font-size: 12px; color: #999; }
-        .hp-amount { font-size: 15px; font-weight: 700; }
-        .hp-amount.positive { color: #2ecc71; }
-        .hp-amount.negative { color: #e74c3c; }
         .empty-state { text-align: center; padding: 60px 20px; }
         .empty-state .empty-icon { font-size: 60px; margin-bottom: 16px; opacity: 0.5; }
         .empty-state p { color: #999; font-size: 15px; }
-
-        /* Notification Page */
         .notif-item { background: white; border-radius: 12px; padding: 14px 16px; margin-bottom: 10px; display: flex; gap: 12px; align-items: flex-start; }
         .notif-dot { width: 10px; height: 10px; border-radius: 50%; background: #2ecc71; margin-top: 5px; flex-shrink: 0; }
         .notif-dot.read { background: #ddd; }
@@ -128,8 +109,6 @@
         .notif-body h4 { font-size: 14px; color: #333; font-weight: 600; margin-bottom: 4px; }
         .notif-body p { font-size: 12px; color: #888; line-height: 1.4; }
         .notif-time { font-size: 11px; color: #bbb; margin-top: 4px; }
-
-        /* Stats Page */
         .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
         .stat-card { background: white; border-radius: 14px; padding: 18px; text-align: center; }
         .stat-card .stat-value { font-size: 22px; font-weight: 800; color: #1a1a2e; margin-bottom: 4px; }
@@ -143,8 +122,6 @@
         .chart-bars { display: flex; align-items: flex-end; gap: 8px; height: 120px; }
         .chart-bar { flex: 1; background: linear-gradient(180deg, #2ecc71, #27ae60); border-radius: 6px 6px 0 0; min-height: 10px; position: relative; transition: height 0.5s ease; }
         .chart-bar-label { position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 10px; color: #999; }
-
-        /* Chat Page */
         .chat-container { display: flex; flex-direction: column; height: calc(100vh - 56px); }
         .chat-messages { flex: 1; padding: 16px; overflow-y: auto; }
         .chat-msg { margin-bottom: 12px; display: flex; flex-direction: column; }
@@ -159,8 +136,6 @@
         .chat-input-area input:focus { border-color: #2ecc71; }
         .chat-send-btn { width: 40px; height: 40px; background: #2ecc71; border: none; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; }
         .chat-send-btn svg { width: 20px; height: 20px; fill: white; }
-
-        /* Settings Modal */
         .settings-modal { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 300; display: none; align-items: flex-end; justify-content: center; }
         .settings-modal.show { display: flex; }
         .settings-panel { background: white; border-radius: 20px 20px 0 0; padding: 24px; width: 100%; max-width: 430px; max-height: 70vh; overflow-y: auto; animation: slideUp 0.3s ease; }
@@ -173,8 +148,6 @@
         .toggle-switch.active { background: #2ecc71; }
         .toggle-switch::after { content: ''; position: absolute; width: 20px; height: 20px; background: white; border-radius: 50%; top: 2px; left: 2px; transition: left 0.3s; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
         .toggle-switch.active::after { left: 22px; }
-
-        /* Gift Page Styles */
         .gift-header { background: white; display: flex; align-items: center; justify-content: center; padding: 16px; position: relative; border-bottom: 1px solid #f0f0f0; }
         .gift-illustration { background: linear-gradient(180deg, #d4f5d9 0%, #b8ecc0 40%, #a5e6ad 70%, #c5f0ca 100%); padding: 40px 20px 50px; text-align: center; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 280px; }
         .bg-circle { position: absolute; border-radius: 50%; opacity: 0.3; }
@@ -273,7 +246,6 @@
 </head>
 <body>
 
-    <!-- PROFILE PAGE -->
     <div id="profile-view" class="page-view active">
         <div class="header">
             <div class="header-content">
@@ -385,7 +357,6 @@
         </div>
     </div>
 
-    <!-- WALLET PAGE -->
     <div id="wallet-view" class="page-view">
         <div class="sub-header">
             <button class="back-btn" onclick="backToProfile()">‹</button>
@@ -420,7 +391,6 @@
         </div>
     </div>
 
-    <!-- VIP PAGE -->
     <div id="vip-view" class="page-view">
         <div class="sub-header">
             <button class="back-btn" onclick="backToProfile()">‹</button>
@@ -472,7 +442,6 @@
         </div>
     </div>
 
-    <!-- GAME HISTORY PAGE -->
     <div id="game-history-view" class="page-view">
         <div class="sub-header">
             <button class="back-btn" onclick="backToProfile()">‹</button>
@@ -488,7 +457,6 @@
         </div>
     </div>
 
-    <!-- TRANSACTION PAGE -->
     <div id="transaction-view" class="page-view">
         <div class="sub-header">
             <button class="back-btn" onclick="backToProfile()">‹</button>
@@ -504,7 +472,6 @@
         </div>
     </div>
 
-    <!-- DEPOSIT HISTORY PAGE -->
     <div id="deposit-history-view" class="page-view">
         <div class="sub-header">
             <button class="back-btn" onclick="backToProfile()">‹</button>
@@ -520,7 +487,6 @@
         </div>
     </div>
 
-    <!-- WITHDRAW HISTORY PAGE -->
     <div id="withdraw-history-view" class="page-view">
         <div class="sub-header">
             <button class="back-btn" onclick="backToProfile()">‹</button>
@@ -536,7 +502,6 @@
         </div>
     </div>
 
-    <!-- NOTIFICATION PAGE -->
     <div id="notification-view" class="page-view">
         <div class="sub-header">
             <button class="back-btn" onclick="backToProfile()">‹</button>
@@ -578,7 +543,6 @@
         </div>
     </div>
 
-    <!-- STATS PAGE -->
     <div id="stats-view" class="page-view">
         <div class="sub-header">
             <button class="back-btn" onclick="backToProfile()">‹</button>
@@ -625,7 +589,6 @@
         </div>
     </div>
 
-    <!-- CHAT PAGE -->
     <div id="chat-view" class="page-view">
         <div class="sub-header">
             <button class="back-btn" onclick="backToProfile()">‹</button>
@@ -647,7 +610,6 @@
         </div>
     </div>
 
-    <!-- GIFT CODE PAGE -->
     <div id="gift-view" class="page-view">
         <div class="loading-overlay" id="loadingOverlay">
             <div class="loading-spinner-large"></div>
@@ -701,7 +663,6 @@
         <div class="confetti-container" id="confettiContainer"></div>
     </div>
 
-    <!-- SETTINGS MODAL -->
     <div class="settings-modal" id="settingsModal">
         <div class="settings-panel">
             <h3>Settings</h3>
@@ -729,12 +690,10 @@
         </div>
     </div>
 
-    <!-- FIREBASE SDK -->
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
 
     <script>
-        // FIREBASE CONFIGURATION
         const firebaseConfig = {
             apiKey: "AIzaSyDR-xSjjR-EkWo7oAcpgP2xJ32wz17fC1o",
             authDomain: "fresh-b7ec1.firebaseapp.com",
@@ -760,7 +719,6 @@
             localStorage.setItem('userPhone', userPhone);
         }
 
-        // Load User Data Real-time
         if(database) {
             database.ref('users/' + userPhone).on('value', (snapshot) => {
                 const data = snapshot.val();
@@ -809,7 +767,6 @@
             setTimeout(() => toast.classList.remove('show'), 1500);
         }
 
-        // Navigation Functions
         function showPage(pageId) {
             document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
             document.getElementById(pageId).classList.add('active');
@@ -832,7 +789,6 @@
             initGiftApp();
         }
 
-        // Language Modal
         function showLanguageModal() { document.getElementById('languageModal').classList.add('show'); }
         function closeLanguageModal() { document.getElementById('languageModal').classList.remove('show'); }
         function selectLanguage(lang) {
@@ -842,7 +798,6 @@
         }
         document.getElementById('languageModal').addEventListener('click', function(e) { if (e.target === this) closeLanguageModal(); });
 
-        // Chat Functions
         function sendChat() {
             const input = document.getElementById('chatInput');
             const msg = input.value.trim();
@@ -850,16 +805,14 @@
 
             const messagesDiv = document.getElementById('chatMessages');
             
-            // Add sent message
             const sentDiv = document.createElement('div');
             sentDiv.className = 'chat-msg sent';
-            sentDiv.innerHTML = `<div class="chat-bubble">${msg}</div><div class="chat-time">Just now</div>`;
+            sentDiv.innerHTML = '<div class="chat-bubble">' + msg + '</div><div class="chat-time">Just now</div>';
             messagesDiv.appendChild(sentDiv);
             
             input.value = '';
             messagesDiv.scrollTop = messagesDiv.scrollHeight;
 
-            // Auto reply after 1 second
             setTimeout(() => {
                 const replies = [
                     "Thank you for your message! Our team will get back to you shortly.",
@@ -871,18 +824,17 @@
                 const reply = replies[Math.floor(Math.random() * replies.length)];
                 const recDiv = document.createElement('div');
                 recDiv.className = 'chat-msg received';
-                recDiv.innerHTML = `<div class="chat-bubble">${reply}</div><div class="chat-time">Just now</div>`;
+                recDiv.innerHTML = '<div class="chat-bubble">' + reply + '</div><div class="chat-time">Just now</div>';
                 messagesDiv.appendChild(recDiv);
                 messagesDiv.scrollTop = messagesDiv.scrollHeight;
             }, 1000);
         }
 
-        // Settings
         function showSettings() { document.getElementById('settingsModal').classList.add('show'); }
         function closeSettings() { document.getElementById('settingsModal').classList.remove('show'); }
         document.getElementById('settingsModal').addEventListener('click', function(e) { if (e.target === this) closeSettings(); });
 
-        // ===== GIFT CODE LOGIC =====
+        // ===== GIFT CODE LOGIC (USER-SPECIFIC HISTORY) =====
         let historyData = [];
         let usedCodes = new Set();
         let giftCodesDB = {};
@@ -912,10 +864,12 @@
             });
         }
 
+        // 🔑 মূল পরিবর্তন: শুধু এই ইউজারের হিস্টোরি লোড করবে
         function loadHistory() {
             return new Promise((resolve, reject) => {
-                database.ref('giftHistory').once('value')
+                database.ref('giftHistory/' + userPhone).once('value')
                     .then(snapshot => {
+                        historyData = [];
                         if (snapshot.exists()) {
                             const allHist = Object.values(snapshot.val());
                             historyData = allHist.sort((a, b) => b.timestamp - a.timestamp);
@@ -995,15 +949,20 @@
             btn.innerHTML = 'Receive';
         }
 
+        // 🔑 মূল পরিবর্তন: হিস্টোরি এই ইউজারের নোডে সেভ হবে
         async function saveHistory(code, amount, description, status) {
             const item = { 
-                code: code, amount: amount, description: description, status: status, 
+                code: code, 
+                amount: amount, 
+                description: description, 
+                status: status, 
                 timestamp: Date.now(), 
                 date: new Date().toLocaleString(),
                 phone: userPhone
             };
             try {
-                if(database) await database.ref('giftHistory').push(item);
+                // 🔑 giftHistory/{userPhone}/ এর নিচে সেভ হচ্ছে
+                if(database) await database.ref('giftHistory/' + userPhone).push(item);
                 historyData.unshift(item);
                 updateHistoryUI();
             } catch (e) {
@@ -1090,4 +1049,4 @@
         });
     </script>
 </body>
-                                                                                                                                                                                                                                                                                                                                    </html>
+                                                                      </html>
